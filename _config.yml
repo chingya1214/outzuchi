@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Chingya 部落格
-subtitle: 這是 Chingya 紀錄學習程式的地方
+title: Outzuchi
+subtitle: outzuchi
 description: 紀錄與分享關於學習前端知識的過程
 keywords: CSS,HTML,Vue,Hexo
 author: Chingya
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://chingya1214.github.io/CyBlog/
+url: https://chingya1214.github.io/outzuchi/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,7 +102,7 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/chingya1214/CyBlog
+  repo: https://github.com/chingya1214/outzuchi
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
   message: "update"
