@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_partial/head') %>
+<body>
+  <div id="container" class="<%= page.fullPage === true ? 'fullPage':'' %>">
+    <div id="wrap">
+      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+      <div class="outer">
+        <section id="main">
+          <%- body %>
+        </section>
+        <% if (!page.fullPage && theme.sidebar && theme.sidebar !=='bottom' ){ %>
+          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+        <% } %>
+      </div>
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    </div>
+    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/after-footer') %>
+  </div>
+<style>
+  .fullPage #main {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  .fullPage .article-meta,
+  .fullPage .article-header,
+  .fullPage .article-footer {
+    display: none;
+  }
+
+  .fullPage .article-inner,
+  .fullPage .archive-article-inner {
+    background: rgba(255, 255, 255, 0);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+  }
+</style>
+</body>
+</html>
